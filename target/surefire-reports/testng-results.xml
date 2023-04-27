@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-26T21:15:57 IST" name="Suite" finished-at="2023-04-26T21:16:47 IST" duration-ms="49872">
+    <groups>
+    </groups>
+    <test started-at="2023-04-26T21:15:57 IST" name="Test" finished-at="2023-04-26T21:16:47 IST" duration-ms="49872">
+      <class name="com.soucelab.test.Testcase1">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:15:57 IST" name="setUpSuite" finished-at="2023-04-26T21:15:57 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:15:57 IST" name="setupClass" finished-at="2023-04-26T21:16:24 IST" duration-ms="26920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[androidEmulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="launchApp(java.lang.reflect.Method)[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:24 IST" name="launchApp" finished-at="2023-04-26T21:16:25 IST" duration-ms="251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.soucelab.test.Testcase1.loginIntoAppWithValidCredentials() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginIntoAppWithValidCredentials()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:25 IST" name="loginIntoAppWithValidCredentials" finished-at="2023-04-26T21:16:41 IST" duration-ms="16623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoAppWithValidCredentials -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:41 IST" name="closeApp" finished-at="2023-04-26T21:16:41 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="launchApp(java.lang.reflect.Method)[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:41 IST" name="launchApp" finished-at="2023-04-26T21:16:42 IST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.soucelab.test.Testcase1.loginIntoAppWithInValidCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginIntoAppWithInValidCredentials()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:42 IST" name="loginIntoAppWithInValidCredentials" finished-at="2023-04-26T21:16:47 IST" duration-ms="5064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoAppWithInValidCredentials -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:47 IST" name="closeApp" finished-at="2023-04-26T21:16:47 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:47 IST" name="tearDownClass" finished-at="2023-04-26T21:16:47 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.soucelab.test.Testcase1@36bc55de]" started-at="2023-04-26T21:16:47 IST" name="tearDownSuite" finished-at="2023-04-26T21:16:48 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.soucelab.test.Testcase1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,11 @@
+com\soucelab\utils\JsonDataReader.class
+com\soucelab\utils\PropertyReader.class
+com\soucelab\page\MenuPage.class
+com\soucelab\page\HomePage.class
+com\soucelab\utils\GestureBaseClass.class
+com\soucelab\utils\AppiumBaseClass.class
+com\soucelab\utils\CustomRetryListener.class
+com\soucelab\utils\Listenerclass.class
+com\soucelab\page\LoginPage.class
+com\soucelab\utils\ExtentReport.class
+com\soucelab\test\Testcase1.class
