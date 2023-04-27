@@ -25,14 +25,10 @@ public class Testcase1 extends AppiumBaseClass{
 		HomePage hp=new HomePage(driver);
 		hp.verifyHomePage();
 		scroll_till_element_is_visible("Sauce Labs Onesie");
-		
 		Thread.sleep(3000);
-		
 		hp.clickOnMenuIcon();
-		
 		MenuPage mp=new MenuPage(driver);
 		mp.clickOnLogout();
-		
 		lp.verifyLoginPage();
 	}
 	
