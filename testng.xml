@@ -8,6 +8,7 @@
       <parameter name="noReset" value="false"></parameter>
       <parameter name="udid" value="emulator-5554"></parameter>
       <parameter name="deviceName" value="androidEmulator"></parameter>
+      <parameter name="platformName" value="Android"></parameter>
       <methods>
       <include name="loginIntoAppWithValidCredentials"></include>
       <include name="loginIntoAppWithInValidCredentials"></include>

@@ -5,6 +5,9 @@
     <classes>
       <class name="com.soucelab.test.Testcase1">
         <parameter name="noReset" value="false"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="deviceName" value="androidEmulator"/>
         <parameter name="grantPermissions" value="true"/>
         <methods>
           <include name="tearDownSuite"/>

@@ -47,7 +47,7 @@ public class AppiumBaseClass extends GestureBaseClass {
 
 	protected static PropertyReader configProperty = new PropertyReader();
 	protected static AppiumDriver driver;
-	private static String platform = configProperty.getProperty("platformName");
+	private static String platform;
 	public static ExtentReports extent;
 	private String UDID;
 	private static String DIR_PATH = System.getProperty("user.dir");
@@ -62,10 +62,10 @@ public class AppiumBaseClass extends GestureBaseClass {
 	private static String URL="";
 
 	public static DesiredCapabilities setDesiredCapabilitiesForAndroid(String grantPermissions, String noReset,
-			String UDID_device,String deviceName) throws Exception {
+			String UDID_device,String deviceName, String platformName) throws Exception {
 		capabilities = new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, configProperty.getProperty("platformName"));
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 		capabilities.setCapability(MobileCapabilityType.UDID, UDID_device);
 
@@ -158,20 +158,21 @@ public class AppiumBaseClass extends GestureBaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "grantPermissions", "noReset", "udid", "deviceName"})
-	public void setupClass(String grantPermissions, String noReset, String udid, String deviceName) {
+	@Parameters({ "grantPermissions", "noReset", "udid", "deviceName", "platformName"})
+	public void setupClass(String grantPermissions, String noReset, String udid, String deviceName, String  platformName) {
 		try {
 			UDID=udid;
+			platform=platformName;
 			startAppiumServer();
 			jsonMapData = JsonDataReader.readJSONSpecifiedParentKey(configProperty.getProperty("JSONSource"), JSON_FILE_PATH);
 			
-			switch (platform.toLowerCase()) {
-			case "android":
+			switch (platform) {
+			case "Android":
 				driver = new AndroidDriver(new URL(URL),
-						setDesiredCapabilitiesForAndroid(grantPermissions, noReset, UDID, deviceName));
+						setDesiredCapabilitiesForAndroid(grantPermissions, noReset, UDID, deviceName, platformName));
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 				break;
-			case "ios":
+			case "iOS":
 				driver = new IOSDriver(new URL(URL),
 						setDesiredCapabilitiesForiOS(grantPermissions, noReset, UDID));
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -192,7 +193,7 @@ public class AppiumBaseClass extends GestureBaseClass {
 			String testName = method.getName();
 			System.out.println("**********Started the execution for Testcase: " + testName + " **********");
 
-			ApplicationState st = ((InteractsWithApps) driver).queryAppState("com.swaglabsmobileapp");
+			ApplicationState st = ((InteractsWithApps)driver).queryAppState("com.swaglabsmobileapp");
 			System.out.println(st.name());
 			if (!(st.name().equalsIgnoreCase("RUNNING_IN_FOREGROUND"))) {// RUNNING_IN_FOREGROUND,NOT_RUNNING
 				((InteractsWithApps) driver).activateApp("com.swaglabsmobileapp");
