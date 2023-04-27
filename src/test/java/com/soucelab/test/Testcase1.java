@@ -15,7 +15,6 @@ public class Testcase1 extends AppiumBaseClass{
 	public void loginIntoAppWithValidCredentials() throws InterruptedException {
 		
 	    logtest("Verifying the Login Page functionality with valid credentials");
-		
 		LoginPage lp =new LoginPage(driver);
 		lp.setUsername(getPropertyInstance().getProperty("Username"));
 		lp.setPassword(getPropertyInstance().getProperty("Password"));
@@ -36,12 +35,10 @@ public class Testcase1 extends AppiumBaseClass{
 	public void loginIntoAppWithInValidCredentials() {
 		
 	    logtest("Verifying the Login Page functionality with Invalid credentials");
-		
 		LoginPage lp =new LoginPage(driver);
 		lp.setUsername(getPropertyInstance().getProperty("Username"));
 		lp.setPassword("wrongpwd");
 		lp.clickOnLoginButton();
-		
 		lp.verifyLoginErrorMessage();
 	}
 
