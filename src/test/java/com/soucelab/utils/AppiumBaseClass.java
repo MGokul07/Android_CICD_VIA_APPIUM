@@ -68,7 +68,8 @@ public class AppiumBaseClass extends GestureBaseClass {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 		capabilities.setCapability(MobileCapabilityType.UDID, UDID_device);
-
+		capabilities.setCapability("avd","androidEmulator");
+		capabilities.setCapability("avdLaunchTimeout",1200000);
 		capabilities.setCapability(MobileCapabilityType.APP, AppiumBaseClass.getAppAbsoultePath());
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 200000);
 		capabilities.setCapability("appWaitActivity", configProperty.getProperty("appActivity"));
