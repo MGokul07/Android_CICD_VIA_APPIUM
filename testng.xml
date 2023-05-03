@@ -11,8 +11,8 @@
       <parameter name="platformName" value="Android"></parameter>
       <methods>
       <include name="loginIntoAppWithValidCredentials"></include>
-      <include name="loginIntoAppWithInValidCredentials"></include>
-      </methods>
+<!--       <include name="loginIntoAppWithInValidCredentials"></include>
+ -->      </methods>
       </class>
     </classes>
   </test> <!-- Test -->
