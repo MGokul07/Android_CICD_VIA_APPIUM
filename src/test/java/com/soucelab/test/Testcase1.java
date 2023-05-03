@@ -1,5 +1,7 @@
 package com.soucelab.test;
 
+import java.util.Random;
+
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,8 @@ import com.soucelab.utils.AppiumBaseClass;
 
 @Listeners(com.soucelab.utils.Listenerclass.class)
 public class Testcase1 extends AppiumBaseClass{
+	
+	Random random= new Random();
 
 	@Test()
 	public void loginIntoAppWithValidCredentials() throws InterruptedException {
@@ -20,7 +24,7 @@ public class Testcase1 extends AppiumBaseClass{
 		lp.setPassword(getPropertyInstance().getProperty("Password"));
 		lp.clickOnLoginButton();
 		Thread.sleep(3000);
-		getScreenshotForValidation("testsm", driver);
+		getScreenshotForValidation("homepage_"+random.nextInt(10000), driver);
 		HomePage hp=new HomePage(driver);
 		hp.verifyHomePage();
 		scroll_till_element_is_visible("Sauce Labs Onesie");
