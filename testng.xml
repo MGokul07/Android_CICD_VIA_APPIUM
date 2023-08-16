@@ -6,13 +6,13 @@
       <class name="com.soucelab.test.Testcase1">
       <parameter name="grantPermissions" value="true"></parameter>
       <parameter name="noReset" value="false"></parameter>
-      <parameter name="udid" value="0G02309R20003B93"></parameter>
-      <parameter name="deviceName" value="realme C35"></parameter>
+      <parameter name="udid" value="emulator-5554"></parameter>
+      <parameter name="deviceName" value="emulator-5554"></parameter>
       <parameter name="platformName" value="Android"></parameter>
       <methods>
-      <include name="loginIntoAppWithValidCredentials"></include>
-<!--       <include name="loginIntoAppWithInValidCredentials"></include>
- -->      </methods>
+      <!-- <include name="loginIntoAppWithValidCredentials"></include> -->
+     <include name="loginIntoAppWithInValidCredentials"></include>
+      </methods>
       </class>
     </classes>
   </test> <!-- Test -->

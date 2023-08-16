@@ -1,0 +1,9 @@
+#ignore reports
+/report/
+/test-output/
+
+#Compiled class file
+*.class
+
+#Package files
+*.jar
