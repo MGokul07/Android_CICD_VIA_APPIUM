@@ -45,5 +45,15 @@ public class Testcase1 extends AppiumBaseClass{
 		lp.clickOnLoginButton();
 		lp.verifyLoginErrorMessage();
 	}
+	
+	@Test(retryAnalyzer = com.soucelab.utils.CustomRetryListener.class)
+	public void loginIntoApp() {
+		
+	    logtest("Verifying the Login Page functionality with Invalid credentials");
+		LoginPage lp =new LoginPage(driver);
+		lp.setUsername(getPropertyInstance().getProperty("Username"));
+		lp.setPassword(getPropertyInstance().getProperty("Password"));
+		lp.clickOnLoginButton();
+	}
 
 }
