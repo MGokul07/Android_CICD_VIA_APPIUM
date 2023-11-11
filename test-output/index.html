@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.soucelab.test.Testcase1" class="method navigator-link" hash-for-method="loginIntoAppWithInValidCredentials">loginIntoAppWithInValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.soucelab.test.Testcase1" class="method navigator-link" hash-for-method="loginIntoAppWithValidCredentials">loginIntoAppWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,6 +137,13 @@
                   <span class="method-name">loginIntoAppWithInValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIntoAppWithValidCredentials">
+                  </a> <!-- loginIntoAppWithValidCredentials -->
+                  <span class="method-name">loginIntoAppWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -153,6 +165,7 @@
         &lt;parameter name=&quot;deviceName&quot; value=&quot;emulator-5554&quot;/&gt;
         &lt;parameter name=&quot;grantPermissions&quot; value=&quot;true&quot;/&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;loginIntoAppWithValidCredentials&quot;/&gt;
           &lt;include name=&quot;loginIntoAppWithInValidCredentials&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.soucelab.test.Testcase1 --&gt;
@@ -195,16 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginIntoAppWithInValidCredentials')
+data.setCell(0, 1, 'loginIntoAppWithValidCredentials')
 data.setCell(0, 2, 'com.soucelab.test.Testcase1')
-data.setCell(0, 3, 4682);
+data.setCell(0, 3, 18275);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginIntoAppWithInValidCredentials')
+data.setCell(1, 2, 'com.soucelab.test.Testcase1')
+data.setCell(1, 3, 6536);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,7 +242,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.soucelab.test.Testcase1</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginIntoAppWithValidCredentials</span>
+                <span class="ignored-method-name">loginIntoApp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -244,27 +261,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setupClass(true, false, emulator-5554, emulator-5554, Android)</span>
-                <span class="method-start">183 ms</span>
+                <span class="method-start">191 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(public void com.soucelab.test.Testcase1.loginIntoAppWithInValidCredentials())</span>
-                <span class="method-start">32228 ms</span>
+                <span class="method-name">launchApp(public void com.soucelab.test.Testcase1.loginIntoAppWithValidCredentials() throws java.lang.Interrup...)</span>
+                <span class="method-start">40087 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginIntoAppWithInValidCredentials</span>
-                <span class="method-start">32831 ms</span>
+                <span class="method-name">loginIntoAppWithValidCredentials</span>
+                <span class="method-start">40606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">37518 ms</span>
+                <span class="method-start">58884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(public void com.soucelab.test.Testcase1.loginIntoAppWithInValidCredentials())</span>
+                <span class="method-start">59728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginIntoAppWithInValidCredentials</span>
+                <span class="method-start">60468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">67007 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">37975 ms</span>
+                <span class="method-start">67795 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">38345 ms</span>
+                <span class="method-start">68486 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
