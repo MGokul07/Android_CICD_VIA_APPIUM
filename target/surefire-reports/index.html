@@ -162,7 +162,7 @@
         &lt;parameter name=&quot;noReset&quot; value=&quot;false&quot;/&gt;
         &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
         &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
-        &lt;parameter name=&quot;deviceName&quot; value=&quot;androidEmulator&quot;/&gt;
+        &lt;parameter name=&quot;deviceName&quot; value=&quot;emulator-5554&quot;/&gt;
         &lt;parameter name=&quot;grantPermissions&quot; value=&quot;true&quot;/&gt;
         &lt;methods&gt;
           &lt;include name=&quot;loginIntoAppWithValidCredentials&quot;/&gt;
@@ -212,16 +212,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginIntoAppWithValidCredentials')
 data.setCell(0, 2, 'com.soucelab.test.Testcase1')
-data.setCell(0, 3, 16931);
+data.setCell(0, 3, 17905);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginIntoAppWithInValidCredentials')
 data.setCell(1, 2, 'com.soucelab.test.Testcase1')
-data.setCell(1, 3, 4791);
+data.setCell(1, 3, 5406);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -236,9 +236,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.soucelab.test.Testcase1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginIntoApp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -253,40 +260,40 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setupClass(true, false, emulator-5554, androidEmulator, Android)</span>
-                <span class="method-start">164 ms</span>
+                <span class="method-name">setupClass(true, false, emulator-5554, emulator-5554, Android)</span>
+                <span class="method-start">207 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(public void com.soucelab.test.Testcase1.loginIntoAppWithValidCredentials() throws java.lang.Interrup...)</span>
-                <span class="method-start">29728 ms</span>
+                <span class="method-start">42994 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginIntoAppWithValidCredentials</span>
-                <span class="method-start">29995 ms</span>
+                <span class="method-start">43853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">46928 ms</span>
+                <span class="method-start">61759 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(public void com.soucelab.test.Testcase1.loginIntoAppWithInValidCredentials())</span>
-                <span class="method-start">47408 ms</span>
+                <span class="method-start">62267 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginIntoAppWithInValidCredentials</span>
-                <span class="method-start">47608 ms</span>
+                <span class="method-start">62634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">52400 ms</span>
+                <span class="method-start">68040 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">52759 ms</span>
+                <span class="method-start">68461 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">53015 ms</span>
+                <span class="method-start">68825 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

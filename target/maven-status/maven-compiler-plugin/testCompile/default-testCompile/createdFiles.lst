@@ -9,3 +9,4 @@ com\soucelab\page\HomePage.class
 com\soucelab\utils\GestureBaseClass.class
 com\soucelab\utils\CustomRetryListener.class
 com\soucelab\utils\Listenerclass.class
+com\soucelab\test\test.class
